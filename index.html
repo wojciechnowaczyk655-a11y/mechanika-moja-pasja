@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Pasja - Mechanika</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #00ffcc;
+            text-shadow: 0 0 10px #00ffcc;
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h2 {
+            margin-top: 40px;
+            color: #00bfff;
+        }
+
+        p {
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            border-bottom: 1px dotted #00ffcc;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #00ffcc;
+            color: #121212;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #00bfa5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Moja Pasja: Mechanika Samochodowa</h1>
+
+    <p>
+        Mechanika samochodowa to coś więcej niż tylko naprawianie aut. To zrozumienie, jak działają silniki, hamulce, zawieszenie czy układy elektryczne.
+    </p>
+    
+    <p>
+        Bez mechaników wiele pojazdów nie nadawałoby się do jazdy. Dzięki tej dziedzinie możemy bezpiecznie poruszać się po drogach każdego dnia.
+    </p>
+
+    <p>
+        Lubię uczyć się, rozkręcać części i rozwiązywać problemy techniczne. To daje mi satysfakcję i praktyczną wiedzę.
+    </p>
+
+    <img src="mechanika.jpg" alt="Silnik samochodowy">
+
+    <h2>Jak zaczęła się moja pasja?</h2>
+    <p>
+        Już jako dziecko rozkręcałem zabawki, żeby zobaczyć, jak działają. Z czasem zacząłem pomagać w warsztacie mojego wujka, co jeszcze bardziej rozbudziło moją ciekawość.
+    </p>
+
+    <a href="https://pl.wikipedia.org/wiki/Mechanika_samochodowa" target="_blank">Dowiedz się więcej</a>
+
+    <br>
+    <button onclick="zmienTlo()">Zmień kolor tła</button>
+
+    <script>
+        // Powitalny alert po załadowaniu strony
+        window.onload = function () {
+            alert("Witaj na mojej stronie o mechanice samochodowej!");
+        };
+
+        // Funkcja zmieniająca kolor tła
+        function zmienTlo() {
+            const kolory = ["#121212", "#1a1a2e", "#0f2027", "#16213e", "#1b1b1b"];
+            const losowy = kolory[Math.floor(Math.random() * kolory.length)];
+            document.body.style.backgroundColor = losowy;
+        }
+    </script>
+
+</body>
+</html>
